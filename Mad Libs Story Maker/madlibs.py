@@ -1,8 +1,8 @@
 # Determine whether to use he, she or they for pronouns in the story
 def determineGender(gender):
-    if (gender == "male"):
+    if (gender.lower() == "male"):
         return("he")
-    elif (gender == "female"):
+    elif (gender.lower() == "female"):
         return("she")
     else:
         return("they")
@@ -10,7 +10,7 @@ def determineGender(gender):
 # Assemble story
 story_name = input("Please enter a name: ").title()
 story = story_name
-gender = input("Gender (Male, Female): ").lower()
+gender = input("Gender: ").lower()
 story += " was walking down the road one day when {} saw a gigantic ".format(determineGender(gender))
 story_object = input("Please enter an object: ")
 story += story_object
