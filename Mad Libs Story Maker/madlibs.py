@@ -10,7 +10,7 @@ def determineGender(gender):
 # Assemble story
 story_name = input("Please enter a name: ").title()
 story = story_name
-gender = input("Gender (Male, Female, Other): ").lower()
+gender = input("Gender (Male, Female): ").lower()
 story += " was walking down the road one day when {} saw a gigantic ".format(determineGender(gender))
 story_object = input("Please enter an object: ")
 story += story_object
